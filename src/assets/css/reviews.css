@@ -9,6 +9,9 @@
     padding-top: 7.5rem;
     padding-bottom: 3.125rem;
   }
+  #reviews h1 {
+    margin-bottom: 6rem;
+  }
   #reviews .container {
     max-width: 82.5rem;
     width: 96%;
@@ -78,6 +81,9 @@
   #reviews {
     padding-top: 9.375rem;
     padding-bottom: 3.125rem;
+  }
+  #reviews h1 {
+    margin-bottom: 6rem;
   }
   #reviews .container {
     display: flex;

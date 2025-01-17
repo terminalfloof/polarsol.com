@@ -18,7 +18,7 @@
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 2rem;
   }
   .cs-topper {
     display: block;
@@ -78,7 +78,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
     opacity: 1;
     display: block;
     background-color: #000;
@@ -106,7 +106,7 @@
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 100%;
     color: var(--bodyTextColor);
   }
@@ -159,28 +159,28 @@
   /* roboto-regular - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 400;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+    src: local(''), url('/assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-regular.woff') format('woff');
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-700 - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 700;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
+    src: local(''), url('/assets/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-700.woff') format('woff');
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-900 - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 900;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
+    src: local(''), url('/assets/fonts/roboto-v29-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-900.woff') format('woff');
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 }
@@ -236,7 +236,7 @@
   }
   #cs-navigation:before {
     /* background color */
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     background: #fff;
@@ -275,7 +275,7 @@
   #cs-navigation .cs-logo {
     width: auto;
     max-width: 12.5rem;
-    height: 100%;
+    height: 4rem;
     margin: 0 auto 0 0;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -667,7 +667,6 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     /* 12px - 24px */
-    padding: clamp(0.75rem, 2vw, 1.5rem) 0;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     /* 12px - 24px */
@@ -699,7 +698,7 @@
   #cs-navigation .cs-logo {
     width: 18.4%;
     max-width: 21.875rem;
-    height: 2rem;
+    height: 5rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
     padding: 0;
@@ -838,7 +837,7 @@
     transition: color 0.3s;
   }
   #cs-navigation .cs-button-solid:before {
-    content: "";
+    content: '';
     width: 0%;
     height: 100%;
     background: #fff;
@@ -867,63 +866,16 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0rem) {
-  #int-hero {
-    z-index: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 30vh;
-    padding-top: 3.125rem;
-  }
-  #int-hero picture {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  #int-hero picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #int-hero h1 {
+  h1 {
     position: relative;
     margin: 0 auto;
     margin-top: 4.375rem;
     margin-bottom: 1.875rem;
     max-width: 31.25rem;
     width: 96%;
-    font-size: 2.13333333rem;
+    font-size: 4rem;
     color: #fff;
     text-align: center;
-  }
-  #int-hero p {
-    display: block;
-    margin: auto;
-    margin-bottom: 1.875rem;
-    max-width: 25rem;
-    width: 96%;
-    color: #fff;
-    text-align: center;
-  }
-  #int-hero:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
   }
 }
 /* Tablet */
@@ -997,7 +949,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
     opacity: 0.7;
     display: block;
     background: #000;
@@ -1031,7 +983,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
     opacity: 0.7;
     display: block;
     background: #000;
@@ -1046,11 +998,11 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    content: "";
+    content: '';
     opacity: 1;
     transform: translateX(-50%);
     display: block;
-    background: url("/assets/svgs/cta-squares.svg");
+    background: url('/assets/svgs/cta-squares.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1148,7 +1100,7 @@
     position: absolute;
     bottom: calc(-16 / 16 * 1rem);
     left: 0;
-    content: "";
+    content: '';
     opacity: 1;
     display: block;
     background: var(--primary);
@@ -1245,7 +1197,7 @@
     position: absolute;
     bottom: calc(-3 / 16 * 1rem);
     left: 0;
-    content: "";
+    content: '';
     opacity: 1;
     display: block;
     background: var(--primary);

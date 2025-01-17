@@ -5,6 +5,13 @@
 @media only screen and (min-width: 0rem) {
   #sbsr-1599 {
     padding: var(--sectionPadding);
+    padding-top: 12rem;
+  }
+  #sbsr-1599 td {
+    color: var(--bodyTextColorWhite);
+  }
+  #sbsr-1599 tfoot tr td {
+    color: var(--bodyTextColor);
   }
   #sbsr-1599 .cs-container {
     width: 100%;
@@ -44,7 +51,7 @@
     text-align: inherit;
     max-width: 43.75rem;
     margin: 0 0 1rem 0;
-    color: white ;
+    color: white;
     position: relative;
   }
   #sbsr-1599 .cs-text {
@@ -54,7 +61,7 @@
     width: 100%;
     max-width: 40.625rem;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: var(--bodyTextColorWhite);
   }
   #sbsr-1599 .cs-text {
     /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
@@ -90,6 +97,7 @@
     display: flex;
     flex-direction: column;
     /* 28px - 40px */
+    margin-top: 1rem;
     gap: clamp(1.75rem, 3vw, 2.5rem);
   }
   #sbsr-1599 .cs-stats {
@@ -131,7 +139,7 @@
     text-align: left;
     /* auto margin top will push text to bottom if there's only one line */
     margin: 0;
-    color: var(--bodyTextColor);
+    color: var(--bodyTextColorWhite);
   }
 }
 /* Tablet - 768px */

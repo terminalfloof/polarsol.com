@@ -1,11 +1,11 @@
 ---
-title: "About | Code Stitch Web Designs"
-description: "Meta description for the page"
-preloadImg: "/assets/images/cabinets2.jpg"
-permalink: "about/"
+title: 'About | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'about/'
 eleventyNavigation:
-  key: About Us
-  order: 200
+    key: About Us
+    order: 200
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
@@ -13,96 +13,53 @@ eleventyNavigation:
 {% endblock %} {% block body %}
 
 <!-- ============================================ -->
-<!--                    LANDING                   -->
-<!-- ============================================ -->
-
-<section id="int-hero">
-  <h1 id="home-h">About Us</h1>
-  <picture>
-    <source media="(max-width: 600px)" srcset="/assets/images/wie.jpg" />
-    <source media="(min-width: 601px)" srcset="/assets/images/wie.jpg" />
-    <img
-      aria-hidden="true"
-      decoding="async"
-      src="/assets/images/wie.jpg"
-      alt="kitchen cabinets"
-      loading="eager"
-      width="2500"
-      height="1667"
-    />
-  </picture>
-</section>
-
-<!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
 <section id="sbs">
-  <div class="cs-container">
-    <!-- Left Image Section -->
-    <div class="cs-left">
-      <picture class="cs-picture cs-picture1">
-        <source
-          media="(max-width: 600px)"
-          srcset="
-            https://t4.ftcdn.net/jpg/00/72/18/03/360_F_72180347_NTfdClV3UZL2xTRnMTGogY5z2vHyp722.jpg
-          "
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="
-            https://t4.ftcdn.net/jpg/00/72/18/03/360_F_72180347_NTfdClV3UZL2xTRnMTGogY5z2vHyp722.jpg
-          "
-        />
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="https://i.pinimg.com/736x/dd/bc/0c/ddbc0c447e096d74bff569bf5c1a02af.jpg"
-          alt="cabinets"
-          loading="lazy"
-          width="400"
-          height="563"
-        />
-      </picture>
-      <picture class="cs-picture cs-picture2">
-        <source
-          media="(max-width: 600px)"
-          srcset="
-            https://t4.ftcdn.net/jpg/00/72/18/03/360_F_72180347_NTfdClV3UZL2xTRnMTGogY5z2vHyp722.jpg
-          "
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="
-            https://i.pinimg.com/736x/dd/bc/0c/ddbc0c447e096d74bff569bf5c1a02af.jpg
-          "
-        />
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/images/construction.jpg"
-          alt="house"
-          loading="lazy"
-          width="400"
-          height="563"
-        />
-      </picture>
-    </div>
-    <!-- Right Content Section-->
-    <div class="cs-right">
-      <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">Polar Solution</h2>
-      <p class="cs-text">
-        At Polar Solutions, we specialize in designing and deploying
-        cutting-edge network systems tailored to your needs. With a focus on
-        efficiency, scalability, and adaptability, we offer comprehensive
-        solutions for businesses of all sizes. From planning and installation to
-        monitoring and maintenance, our team is dedicated to unlocking your
-        network's full potential. Let us help you take control and perfect your
-        systems.
-      </p>
-    </div>
-  </div>
+	<!-- <h1 id="home-h">About Us</h1> -->
+	<div class="cs-container">
+		<!-- Left Image Section -->
+		<div class="cs-left">
+			<picture class="cs-picture cs-picture1">
+				<source
+					media="(max-width: 600px)"
+					srcset="
+						https://t4.ftcdn.net/jpg/00/72/18/03/360_F_72180347_NTfdClV3UZL2xTRnMTGogY5z2vHyp722.jpg
+					"
+				/>
+				<source
+					media="(min-width: 601px)"
+					srcset="
+						https://t4.ftcdn.net/jpg/00/72/18/03/360_F_72180347_NTfdClV3UZL2xTRnMTGogY5z2vHyp722.jpg
+					"
+				/>
+				<img
+					aria-hidden="true"
+					decoding="async"
+					src="https://i.pinimg.com/736x/dd/bc/0c/ddbc0c447e096d74bff569bf5c1a02af.jpg"
+					alt="cabinets"
+					loading="lazy"
+					width="400"
+					height="563"
+				/>
+			</picture>
+		</div>
+		<!-- Right Content Section-->
+		<div class="cs-right">
+			<span class="cs-topper">About Us</span>
+			<h2 class="cs-title">Polar Solutions</h2>
+			<p class="cs-text">
+				At Polar Solutions, we specialize in designing and deploying
+				cutting-edge network systems tailored to your needs. With a
+				focus on efficiency, scalability, and adaptability, we offer
+				comprehensive solutions for businesses of all sizes. From
+				planning and installation to monitoring and maintenance, our
+				team is dedicated to unlocking your network's full potential.
+				Let us help you take control and perfect your systems.
+			</p>
+		</div>
+	</div>
 </section>
 
 {% include 'components/cta.html' %} {% endblock %}

@@ -15,10 +15,11 @@
   }
   #cs-contact {
     padding: var(--sectionPadding);
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
   }
   #cs-contact .cs-container {
     margin: auto;
+    margin-top: 6rem;
     /* changes to 1280px at desktop */
     max-width: 50rem;
     width: 100%;
@@ -126,7 +127,7 @@
     bottom: calc(-2 / 16 * 1rem);
     left: 0;
     /* Animated underline */
-    content: "";
+    content: '';
     opacity: 1;
     display: block;
     /* current color of the parent */
@@ -170,7 +171,7 @@
     top: 0;
     left: 0;
     /* background color overlay */
-    content: "";
+    content: '';
     display: block;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
     height: 100%;

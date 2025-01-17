@@ -8,6 +8,7 @@
     padding: var(--sectionPadding);
   }
   #sbs .cs-container {
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,6 +124,7 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #sbs .cs-container {
+    margin-top: 6rem;
     flex-flow: row;
     justify-content: space-between;
     gap: 3.25rem;

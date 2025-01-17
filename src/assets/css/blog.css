@@ -12,6 +12,7 @@
     width: 100%;
     max-width: 80rem;
     margin: auto;
+    margin-top: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +37,7 @@
   }
   #services-1354 .cs-card-group {
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -109,7 +110,7 @@
   }
   #services-1354 .cs-background:before {
     /* background color overlay */
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     height: 100%;

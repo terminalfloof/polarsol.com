@@ -17,89 +17,250 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Project Two Gallery</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
+    <!DOCTYPE html>
+    <html lang="en">
+       
+      <head>
+        <link rel="stylesheet" href="/assets/css/projects.css" />
+        <link rel="stylesheet" href="/assets/css/dark.css" /></
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+    
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Meta description for the page" />
+        <meta name="keywords" content="" />
+        <link rel="canonical" href="https://www.example.com/project-one/" />
+    
+        <!--Social Media Display-->
+        <meta property="og:title" content="Project One | Code Stitch Web Designs" />
+        <meta property="og:description" content="Meta description for the page" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.example.com/project-one/" />
+        <meta property="og:image" content="/assets/images/logo-small.png" />
+        <meta
+          property="og:image:secure_url"
+          content="/assets/images/logo-small.png"
+        />
+    
+        <!--Favicons-->
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/assets/favicons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/assets/favicons/favicon-32x32.png?v1"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/assets/favicons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+    
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          href="/assets/fonts/roboto-v29-latin-regular.woff2"
+          crossorigin
+        />
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          href="/assets/fonts/roboto-v29-latin-700.woff2"
+          crossorigin
+        />
+    
+        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+    
+        <link rel="preload" as="image" href="/assets/images/cabinets2.jpg" />
+    
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css" />
+        <link rel="stylesheet" href="/assets/css/dark.css" />
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+    
+        <link rel="stylesheet" href="/assets/css/projects.css" />
+    
+        <title>Project One | Code Stitch Web Designs</title>
+      </head>
+      <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main" tabindex="1"
+          >Click To Skip To Main Content</a
+        >
+    
+    
+        <!-- ============================================ -->
+        <!--            Side By Side Reverse              -->
+        <!-- ============================================ -->
+    
+        <section id="sbsr-1599">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Plan Information</span>
+                    <h2 class="cs-title">Why you would want to choose this plan</h2>
+                    <p class="cs-text">
+                        This plan provides a cost-effective, scalable solution with robust routing, security, and reliable Wi-Fi coverage across all locations. It ensures network uptime with UPS backups and centralized management while meeting all connectivity needs
+  
+                    </p>
                     <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/network-layout.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/network-layout.png">
+                        <img loading="lazy" decoding="async" src="h/assets/images/network-layout.png" alt="people" width="608" height="406">
                     </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                <div class="cs-stats-group">
+  
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Equipment Table</title>
+                        <style>
+                            table {
+                                border-collapse: collapse;
+                                width: 100%;
+                                margin: 20px 0;
+                                font-family: Arial, sans-serif;
+                            }
+                            th, td {
+                                border: 1px solid #ddd;
+                                text-align: left;
+                                padding: 8px;
+                            }
+                            th {
+                                background-color: #f4f4f4;
+                            }
+                            tfoot td {
+                                font-weight: bold;
+                                background-color: #f9f9f9;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Device Type</th>
+                                    <th>Product Name</th>
+                                    <th>Quantity</th>
+                                    <th>Unit Price</th>
+                                    <th>Total Price</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Router</td>
+                                    <td>UniFi Dream Machine Pro (UDM-Pro)</td>
+                                    <td>7</td>
+                                    <td>$379.00</td>
+                                    <td>$2,653.00</td>
+                                    <td>1 HQ, 6 Shacks</td>
+                                </tr>
+                                <tr>
+                                    <td>Switch</td>
+                                    <td>UniFi Switch Pro 24 PoE</td>
+                                    <td>2</td>
+                                    <td>$399.00</td>
+                                    <td>$798.00</td>
+                                    <td>HQ</td>
+                                </tr>
+                                <tr>
+                                    <td>Switch</td>
+                                    <td>UniFi Switch Lite 8 PoE</td>
+                                    <td>3</td>
+                                    <td>$109.00</td>
+                                    <td>$327.00</td>
+                                    <td>1 HQ, 2 Shacks</td>
+                                </tr>
+                                <tr>
+                                    <td>Access Point</td>
+                                    <td>UniFi 6 Pro Access Point</td>
+                                    <td>13</td>
+                                    <td>$149.00</td>
+                                    <td>$1,937.00</td>
+                                    <td>4 HQ, 9 Shacks</td>
+                                </tr>
+                                <tr>
+                                    <td>NAS</td>
+                                    <td>UniFi Cloud Key Gen2 Plus</td>
+                                    <td>1</td>
+                                    <td>$199.00</td>
+                                    <td>$199.00</td>
+                                    <td>HQ</td>
+                                </tr>
+                                <tr>
+                                    <td>Firewall</td>
+                                    <td>UniFi Security Gateway Pro</td>
+                                    <td>1</td>
+                                    <td>$149.00</td>
+                                    <td>$149.00</td>
+                                    <td>HQ</td>
+                                </tr>
+                                <tr>
+                                    <td>SD-WAN Controller</td>
+                                    <td>UniFi Controller Cloud Hosting</td>
+                                    <td>1</td>
+                                    <td>$75.00</td>
+                                    <td>$75.00</td>
+                                    <td>HQ</td>
+                                </tr>
+                                <tr>
+                                    <td>UPS</td>
+                                    <td>APC Back-UPS 850VA</td>
+                                    <td>7</td>
+                                    <td>$99.99</td>
+                                    <td>$699.93</td>
+                                    <td>1 HQ, 6 Shacks</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4" style="text-align: right;">Total Cost:</td>
+                                    <td colspan="2">$6,837.93</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </body>
+                    </html>
+                    
+                    <ul class="cs-stats">
+                        <li class="cs-stat">
+                            <span class="cs-number">99%</span>
+                            <span class="cs-desc">Positive feedback</span>
+                        </li>
+                        <li class="cs-stat">
+                            <span class="cs-number">100%</span>
+                            <span class="cs-desc">Suitable for any business</span>
+                        </li>
+                        <li class="cs-stat">
+                            <span class="cs-number">24/7</span>
+                            <span class="cs-desc">Online customer support</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
-        </div>
-    </section>
-
-    {% include 'components/cta.html' %}
+        </section>
+                                    
+          
+ 
 
 {% endblock %}

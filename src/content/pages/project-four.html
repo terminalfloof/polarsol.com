@@ -1,0 +1,262 @@
+---
+title: "Project Four | Code Stitch Web Designs"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "project-four/"
+eleventyNavigation:
+  key: Project Four
+  order: 3200
+  parent: Projects
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/projects.css" />
+{% endblock %} {% block body %}
+
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+       
+      <head>
+        <link rel="stylesheet" href="/assets/css/projects.css" />
+        <link rel="stylesheet" href="/assets/css/dark.css" /></
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+    
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Meta description for the page" />
+        <meta name="keywords" content="" />
+        <link rel="canonical" href="https://www.example.com/project-one/" />
+    
+        <!--Social Media Display-->
+        <meta property="og:title" content="Project One | Code Stitch Web Designs" />
+        <meta property="og:description" content="Meta description for the page" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.example.com/project-one/" />
+        <meta property="og:image" content="/assets/images/logo-small.png" />
+        <meta
+          property="og:image:secure_url"
+          content="/assets/images/logo-small.png"
+        />
+    
+        <!--Favicons-->
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/assets/favicons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/assets/favicons/favicon-32x32.png?v1"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/assets/favicons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+    
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          href="/assets/fonts/roboto-v29-latin-regular.woff2"
+          crossorigin
+        />
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          href="/assets/fonts/roboto-v29-latin-700.woff2"
+          crossorigin
+        />
+    
+        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+    
+        <link rel="preload" as="image" href="/assets/images/cabinets2.jpg" />
+    
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css" />
+        <link rel="stylesheet" href="/assets/css/dark.css" />
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+    
+        <link rel="stylesheet" href="/assets/css/projects.css" />
+    
+        <title>Project One | Code Stitch Web Designs</title>
+      </head>
+      <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main" tabindex="1"
+          >Click To Skip To Main Content</a
+        >
+    
+
+        <!-- ============================================ -->
+        <!--            Side By Side Reverse              -->
+        <!-- ============================================ -->
+    
+        <section id="sbsr-1599">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Plan Information</span>
+                    <h2 class="cs-title">Why you would want to choose this plan</h2>
+                    <p class="cs-text">
+                      This plan provides top-tier Cisco equipment for unmatched reliability, advanced security, and high performance across all locations. It ensures scalable, enterprise-grade solutions with robust SD-WAN, PoE, and Wi-Fi capabilities. At $44,435.02, it’s ideal for critical business environments requiring maximum uptime and protection.
+                    </p>
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/network-layout.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/network-layout.png">
+                        <img loading="lazy" decoding="async" src="h/assets/images/network-layout.png" alt="people" width="608" height="406">
+                    </picture>
+                </div>
+                <div class="cs-stats-group">
+                  <!DOCTYPE html>
+                  <html lang="en">
+                  <head>
+                      <meta charset="UTF-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      <title>Equipment Table</title>
+                      <style>
+                          table {
+                              border-collapse: collapse;
+                              width: 100%;
+                              margin: 20px 0;
+                              font-family: Arial, sans-serif;
+                          }
+                          th, td {
+                              border: 1px solid #ddd;
+                              text-align: left;
+                              padding: 8px;
+                          }
+                          th {
+                              background-color: #f4f4f4;
+                          }
+                          tfoot td {
+                              font-weight: bold;
+                              background-color: #f9f9f9;
+                          }
+                      </style>
+                  </head>
+                  <body>
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>Device Type</th>
+                                  <th>Product Name</th>
+                                  <th>Quantity</th>
+                                  <th>Unit Price</th>
+                                  <th>Total Price</th>
+                                  <th>Location</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Router</td>
+                                  <td>Cisco Meraki MX85 Security Appliance</td>
+                                  <td>7</td>
+                                  <td>$2,951.30</td>
+                                  <td>$20,659.10</td>
+                                  <td>1 HQ, 6 Shacks</td>
+                              </tr>
+                              <tr>
+                                  <td>Switch</td>
+                                  <td>Cisco Catalyst 9200L 24-Port PoE+ Switch</td>
+                                  <td>2</td>
+                                  <td>$1,385.00</td>
+                                  <td>$2,770.00</td>
+                                  <td>HQ</td>
+                              </tr>
+                              <tr>
+                                  <td>Switch</td>
+                                  <td>Cisco SG250-08HP 8-Port Gigabit PoE Smart Switch</td>
+                                  <td>3</td>
+                                  <td>$150.00</td>
+                                  <td>$450.00</td>
+                                  <td>1 HQ, 2 Shacks</td>
+                              </tr>
+                              <tr>
+                                  <td>Access Point</td>
+                                  <td>Cisco Catalyst 9115AX Series Access Point</td>
+                                  <td>13</td>
+                                  <td>$1,000.00</td>
+                                  <td>$13,000.00</td>
+                                  <td>4 HQ, 9 Shacks</td>
+                              </tr>
+                              <tr>
+                                  <td>NAS</td>
+                                  <td>Synology DS920+</td>
+                                  <td>1</td>
+                                  <td>$549.99</td>
+                                  <td>$549.99</td>
+                                  <td>HQ</td>
+                              </tr>
+                              <tr>
+                                  <td>Firewall</td>
+                                  <td>Cisco Firepower 1120</td>
+                                  <td>1</td>
+                                  <td>$1,891.00</td>
+                                  <td>$1,891.00</td>
+                                  <td>HQ</td>
+                              </tr>
+                              <tr>
+                                  <td>SD-WAN Controller</td>
+                                  <td>Cisco Meraki MX100 Cloud-Managed Security Appliance</td>
+                                  <td>1</td>
+                                  <td>$1,825.00</td>
+                                  <td>$1,825.00</td>
+                                  <td>HQ</td>
+                              </tr>
+                              <tr>
+                                  <td>UPS</td>
+                                  <td>APC Smart-UPS 100VA</td>
+                                  <td>7</td>
+                                  <td>$469.99</td>
+                                  <td>$3,289.93</td>
+                                  <td>1 HQ, 6 Shacks</td>
+                              </tr>
+                          </tbody>
+                          <tfoot>
+                              <tr>
+                                  <td colspan="4" style="text-align: right;">Total Cost:</td>
+                                  <td colspan="2">$44,435.02</td>
+                              </tr>
+                          </tfoot>
+                      </table>
+                  </body>
+                  </html>
+                  
+                    <ul class="cs-stats">
+                        <li class="cs-stat">
+                            <span class="cs-number">99%</span>
+                            <span class="cs-desc">Positive feedback</span>
+                        </li>
+                        <li class="cs-stat">
+                            <span class="cs-number">100%</span>
+                            <span class="cs-desc">Suitable for any business</span>
+                        </li>
+                        <li class="cs-stat">
+                            <span class="cs-number">24/7</span>
+                            <span class="cs-desc">Online customer support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+                                    
+          
+
+   {% endblock %}

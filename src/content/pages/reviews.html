@@ -1,127 +1,345 @@
 ---
-title: 'Reviews | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'reviews/'
+title: "Reviews | Code Stitch Web Designs"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "reviews/"
 eleventyNavigation:
-    key: Reviews
-    order: 400
+  key: Reviews
+  order: 400
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/reviews.css" />
+{% endblock %} {% block body %}
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/reviews.css">
-{% endblock %}
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
 
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Standard meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meta description for the page" />
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="https://www.example.com/reviews/" />
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+    <!--Social Media Display-->
+    <meta property="og:title" content="Reviews | Code Stitch Web Designs" />
+    <meta property="og:description" content="Meta description for the page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.example.com/reviews/" />
+    <meta property="og:image" content="/assets/images/logo-small.png" />
+    <meta
+      property="og:image:secure_url"
+      content="/assets/images/logo-small.png"
+    />
 
-    <section id="int-hero">
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png?v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preloads -->
+    <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-700.woff2"
+      crossorigin
+    />
+
+    <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+
+    <link rel="preload" as="image" href="/assets/images/cabinets2.jpg" />
+
+    <!-- Sitewide Stylesheets and Scripts -->
+    <link rel="stylesheet" href="/assets/css/root.css" />
+    <link rel="stylesheet" href="/assets/css/dark.css" />
+    <script defer src="/assets/js/dark.js"></script>
+    <script defer src="/assets/js/nav.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/reviews.css" />
+
+    <title>Reviews | Code Stitch Web Designs</title>
+  </head>
+  <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main" tabindex="1"
+      >Click To Skip To Main Content</a
+    >
+
+
+      <!-- ============================================ -->
+      <!--                    LANDING                   -->
+      <!-- ============================================ -->
+
+      <section id="int-hero">
         <h1 id="home-h">Our Reviews</h1>
         <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+          <source media="(max-width: 600px)" srcset="/assets/images/wei.webp" />
+          <source media="(min-width: 601px)" srcset="/assets/images/wei.jpg" />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/wei.jpg"
+            alt="new home"
+            width="2500"
+            height="1667"
+            loading="eager"
+          />
         </picture>
-    </section>
+      </section>
 
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                  Reviews                     -->
+      <!-- ============================================ -->
 
-    <section id="reviews">
+      <section id="reviews">
         <div class="container">
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">B Miller<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
+          <div class="review">
+            <picture>
+              <img
+                class="profile"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/profile.svg"
+                alt=""
+                width="99"
+                height="99"
+              />
+            </picture>
+            <p>
+              "Polar Solutions transformed our business network! Their team was
+              professional, efficient, and went above and beyond to meet our
+              needs. The deployment process was seamless, and our new system
+              runs flawlessly. Highly recommend!"
+            </p>
+
+            <div class="star-group">
+              <span class="name"
+                >B Miller<span class="desc">Coffee Shop Owner</span></span
+              >
+              <picture>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/stars.svg"
+                  alt="stars"
+                  width="91"
+                  height="15"
+                />
+              </picture>
             </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Vincent M.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
+          </div>
+          <div class="review">
+            <picture>
+              <img
+                class="profile"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/profile.svg"
+                alt=""
+                width="99"
+                height="99"
+              />
+            </picture>
+            <p>
+              "We opted for the Cisco Premium package, and it was worth every
+              penny. Polar Solutions delivered a cutting-edge network setup and
+              provided excellent support throughout. Our operations have never
+              been smoother!"
+            </p>
+            <div class="star-group">
+              <span class="name"
+                >Vincent M.<span class="desc"
+                  >Italian Restaurant Owner</span
+                ></span
+              >
+              <picture>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/stars.svg"
+                  alt="stars"
+                  width="91"
+                  height="15"
+                />
+              </picture>
             </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Alex L.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
+          </div>
+          <div class="review">
+            <picture>
+              <img
+                class="profile"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/profile.svg"
+                alt=""
+                width="99"
+                height="99"
+              />
+            </picture>
+            <p>
+              "Exceptional service! The team at Polar Solutions was incredibly
+              accommodating and adapted the design to our exact specifications.
+              Their expertise is unmatched, and their customer service is
+              outstanding!"
+            </p>
+            <div class="star-group">
+              <span class="name"
+                >Alex L.<span class="desc">Taco Shop Owner</span></span
+              >
+              <picture>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/stars.svg"
+                  alt="stars"
+                  width="91"
+                  height="15"
+                />
+              </picture>
             </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Arrieana M.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
+          </div>
+          <div class="review">
+            <picture>
+              <img
+                class="profile"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/profile-woman.svg"
+                alt=""
+                width="99"
+                height="99"
+              />
+            </picture>
+            <p>
+              "Polar Solutions helped eliminate inefficiencies in our network,
+              and the results are amazing. The only reason I’m giving 4 stars is
+              that the installation took a bit longer than expected, but the end
+              result was worth it!"
+            </p>
+            <div class="star-group">
+              <span class="name"
+                >Arrieana M.<span class="desc">Spa Business Owner</span></span
+              >
+              <picture>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/stars.svg"
+                  alt="stars"
+                  width="91"
+                  height="15"
+                />
+              </picture>
             </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Leo N.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
+          </div>
+          <div class="review">
+            <picture>
+              <img
+                class="profile"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/profile.svg"
+                alt=""
+                width="99"
+                height="99"
+              />
+            </picture>
+            <p>
+              "From planning to optimization, Polar Solutions handled everything
+              flawlessly. Their Unifi Budget-Friendly package was perfect for
+              our small business, and we’re thrilled with the results!"
+            </p>
+            <div class="star-group">
+              <span class="name"
+                >Leo N.<span class="desc">Coffee Shop Owner</span></span
+              >
+              <picture>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/stars.svg"
+                  alt="stars"
+                  width="91"
+                  height="15"
+                />
+              </picture>
             </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Brian A.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
+          </div>
+          <div class="review">
+            <picture>
+              <img
+                class="profile"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/profile.svg"
+                alt=""
+                width="99"
+                height="99"
+              />
+            </picture>
+            <p>
+              "I can't recommend Polar Solutions enough! They took the time to
+              explain every step and made sure we were completely satisfied. Our
+              network is faster and more reliable than ever. Excellent
+              experience!"
+            </p>
+
+            <div class="star-group">
+              <span class="name"
+                >Brian A.<span class="desc">Bodyshop Business Owner</span></span
+              >
+              <picture>
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/svgs/stars.svg"
+                  alt="stars"
+                  width="91"
+                  height="15"
+                />
+              </picture>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    {% include 'components/cta.html' %}
-
-{% endblock %}
+      {% include 'components/cta.html' %} {% endblock %}
+    </main>
+  </body>
+</html>
